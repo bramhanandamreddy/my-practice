@@ -2,9 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-// import myImage from "./pexels-artem-beliaikin-1832323-removebg-previewmy (1).jpg";
 
-// Styled components for the provided CSS
 const IntroContainer = styled.div`
   display: flex;
   flex-direction: row; /* Change to row */
@@ -93,18 +91,6 @@ const PrimaryButton = styled.div`
   border-radius: 8px;
 `;
 
-const SecondaryButton = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px 24px;
-  width: 117px;
-  height: 43px;
-  border: 2px solid #25282b;
-  border-radius: 8px;
-`;
-
 const ButtonText = styled.div`
   width: 67px;
   height: 27px;
@@ -135,11 +121,11 @@ const Home = () => {
         </SubheadlineContainer>
         <ButtonsContainer>
           <PrimaryButton>
-            <ButtonText>Primary</ButtonText>
+            <ButtonText>Projects</ButtonText>
           </PrimaryButton>
-          <SecondaryButton>
-            <ButtonText>Secondary</ButtonText>
-          </SecondaryButton>
+          <PrimaryButton>
+            <ButtonText>Linkdein</ButtonText>
+          </PrimaryButton>
         </ButtonsContainer>
       </ContentContainer>
       <ImageContainer>

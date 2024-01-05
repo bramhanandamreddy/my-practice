@@ -38,38 +38,14 @@ const Navigation = styled.nav`
   top: 14px;
 `;
 
-const NavTab = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 2px;
-  width: 52px;
-  height: 28px;
-
-  /* Styling for the "Sobre" tabs */
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  color: #25282b;
-`;
-
 const Navbar = () => {
   return (
     <Header>
       <MadelynTorff>Madelyn Torff</MadelynTorff>
       <Navigation>
-        <Link to="/Home">
-          <NavTab>Home</NavTab>
-        </Link>
-        <Link to="/AddProjects">
-          <NavTab>Projects</NavTab>
-        </Link>
-        <Link to="/projects">
-          <NavTab>projects</NavTab>
-        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/add-project">Add Project</Link>
+        <Link to="/Project">Projects</Link>
       </Navigation>
     </Header>
   );
